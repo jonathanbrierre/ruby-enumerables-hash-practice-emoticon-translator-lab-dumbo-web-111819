@@ -14,7 +14,7 @@ def load_library (file)
    value.each do |(element1, element2)|
       
       inner_hash_m[element2] = key
-    
+    binding.pry
    end
    
    emoticons_hash["get_emoticon"] = inner_hash_e
