@@ -22,10 +22,10 @@ end
 def get_japanese_emoticon(yaml_file,emoticon)
   
   translator = load_library(yaml_file)
- if translator["get_emoticon"]
+ if translator["get_emoticon"][emoticon]
    translator["get_emoticon"][emoticon]
- else 
-   return "Sorry, that emoticon was not found"
+  else 
+    return "Sorry, that emoticon was not found"
  end
   #binding.pry
 end
