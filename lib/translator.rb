@@ -13,6 +13,7 @@ def load_library (file)
    value.each do |emoticons|
     if emoticons == 1 
       inner_hash_m[emoticons] = key
+    end
    end
    
    emoticons_hash["get_emoticon"] = inner_hash_e
