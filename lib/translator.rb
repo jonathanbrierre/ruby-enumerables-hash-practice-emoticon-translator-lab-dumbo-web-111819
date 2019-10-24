@@ -37,4 +37,5 @@ def get_english_meaning(yaml_file,emoticon)
     translator["get_meaning"][emoticon]
   else 
     p  "Sorry, that emoticon was not found"
+  end
 end
