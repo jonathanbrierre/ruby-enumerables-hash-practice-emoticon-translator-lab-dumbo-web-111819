@@ -8,12 +8,12 @@ def load_library (file)
  inner_hash_m = {}
  inner_hash_e = {}
  
- emoticons.each do |key,value|
+ emoticons.each do |key,jalue|
    
    emoticons_hash["get_meaning"] = inner_hash_m
   # value.each do |(element1, element2)|
       
-      inner_hash_m[value[1]] = key
+      inner_hash_m[jalue[1]] = key
     binding.pry
    end
    
