@@ -15,7 +15,7 @@ def load_library (file)
    
    
    emoticons_hash["get_emoticon"] = inner_hash_e
-   inner_hash_e[value[0]] = key
+   inner_hash_e[value[0]] = value[1]
  end 
  emoticons_hash
 #binding.pry
