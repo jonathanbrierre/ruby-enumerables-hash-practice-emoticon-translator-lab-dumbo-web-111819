@@ -4,8 +4,10 @@ require 'pry'
 def load_library (file)
 
  emoticons = YAML.load_file('lib/emoticons.yml')
- emoticons['get_meaning'] = {}
- emoticons['get_emoticon'] = {}
+ emoticons.map do |key,value|
+   emoticons["get_meaning"] = key
+   emoticons["get_emoticon"] = value
+ end 
  emoticons
  binding.pry
 end
