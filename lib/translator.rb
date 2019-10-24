@@ -10,7 +10,7 @@ def load_library (file)
    emoticons_hash["get_emoticon"] = value
  end 
  emoticons_hash
-# binding.pry
+binding.pry
 end
 
 def get_japanese_emoticon
