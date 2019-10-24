@@ -10,9 +10,9 @@ def load_library (file)
  
  emoticons.each do |key,value|
    emoticons_hash["get_meaning"] = inner_hash_m
-   value.each do |emoticons|
-      japanese_emoticon = emoticons.last
-      inner_hash_m[japanese_emoticon] = key
+   value.each do |(element1, element2|
+      
+      inner_hash_m[element2] = key
     
    end
    
