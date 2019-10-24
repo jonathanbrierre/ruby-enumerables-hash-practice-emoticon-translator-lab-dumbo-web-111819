@@ -11,9 +11,7 @@ def load_library (file)
  emoticons.each do |key,value|
    emoticons_hash["get_meaning"] = inner_hash_m
      inner_hash_m[value[1]] = key
-    
-   
-   
+
    emoticons_hash["get_emoticon"] = inner_hash_e
      inner_hash_e[value[0]] = value[1]
  end 
@@ -22,7 +20,7 @@ def load_library (file)
 end
 
 def get_japanese_emoticon
-  # code goes here
+  emoticons = YAML.load_file('lib/emoticons.yml')
 end
 
 def get_english_meaning
